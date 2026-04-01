@@ -9,6 +9,7 @@ public class Ex08_04 {
         String[] names = {"kim", "hong", "Lee", "Park"};
 
         List<String> KimList = Arrays.stream(names).filter(name -> name.equals("kim")).collect(Collectors.toList());
-        System.out.println(names);
+        System.out.println("원본 배열 내용: " + Arrays.toString(names));
+        System.out.println("(List): " + KimList);
     }
 }
